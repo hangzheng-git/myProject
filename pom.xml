@@ -10,8 +10,9 @@
     </parent>
     <groupId>cloud.zhenghang</groupId>
     <artifactId>wechat</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0</version>
     <name>wechat</name>
+    <packaging>jar</packaging>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>1.8</java.version>
@@ -58,6 +59,8 @@
                 </configuration>
             </plugin>
         </plugins>
+        <!--打包后包名，不配置默认是${artifactId}-${version}-->
+        <finalName>myProject</finalName>
     </build>
 
 </project>
